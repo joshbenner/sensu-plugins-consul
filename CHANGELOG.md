@@ -5,6 +5,15 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 
 ## [Unreleased]
 
+### Security
+- updated rubocop dependency to `~> 0.51.0` per: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8418. (@majormoses)
+
+### Changed
+- appeased the cops (@majormoses)
+
+### Breaking Changes
+- removed ruby `< 2.1` support (@majormoses)
+
 ## [1.6.0] - 2017-09-30
 ### Added
 - `check-consul-leader`, `check-consul-members`, and `check-consul-servers` now accept `--insecure`, `--capath`, `--timeout` arguments (@akatch)
